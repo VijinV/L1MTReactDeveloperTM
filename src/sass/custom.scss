@@ -1,0 +1,35 @@
+/**
+ * override Bootstrap variables and styles.
+ */
+
+$primary: #3C3C3C;
+$font-family-sans-serif: 'Noto Sans', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+/**
+ * Custom styles for the application.
+ */
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "px": (
+            property: padding-left padding-right,
+            class: px,
+            responsive: true,
+            values: (
+                20: 7rem,
+            )
+        )
+    )
+);
+
+
+@import "bootstrap/scss/bootstrap";
