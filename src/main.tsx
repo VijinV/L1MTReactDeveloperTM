@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import './sass/custom.scss'
 import App from './App.tsx'
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import * as bootstrap from 'bootstrap';
+import 'bootstrap';
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
